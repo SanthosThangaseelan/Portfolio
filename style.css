@@ -334,11 +334,7 @@ nav .container {
     transition: transform 0.3s ease;
 }
 
-@media (max-width: 480px) {
-  .profile-img img {
-    margin-left: 60px;
-  }
-}
+
 
 
 .profile-img img:hover {
