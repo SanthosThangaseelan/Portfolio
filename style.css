@@ -224,6 +224,47 @@ nav .container {
   border-radius: 8px;
 }
 
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-img {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 5px solid var(--primary);
+}
+
+/* Responsive layout: side-by-side on md and above */
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .profile-img {
+    flex: 1;
+    justify-content: flex;
+  }
+
+  .about-text {
+    flex: 2;
+    padding-left: 1rem;
+  }
+}
+
+
 .glow-btn:hover {
     background: transparent;
     color: var(--primary);
@@ -325,7 +366,6 @@ nav .container {
     width: 100%;
     height: 100%;
     max-width: 300px;
-    margin-left: 70px;
     border-radius: 50%;
     aspect-ratio: 1/1;
     object-fit: cover;
